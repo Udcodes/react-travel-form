@@ -50,7 +50,7 @@ class App extends Component {
 
           <input name="age" value={this.state.age} onChange={this.handleChange} placeholder="Age" />
           <br />
-
+          <br />
           <label>
             <input
               type="radio"
@@ -76,15 +76,18 @@ class App extends Component {
           </label>
 
           <br />
+          <br />
 
           <select value={this.state.destination} name="destination" onChange={this.handleChange}>
             <option value="">-- Please choose a destination --</option>
-            <option value="germany">Germany</option>
-            <option value="norway">Norway</option>
-            <option value="north pole">North Pole</option>
-            <option value="south pole">South Pole</option>
+            <option value="Germany">Germany</option>
+            <option value="Canada">Canada</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Finland">Finland</option>
+            <option value="Netherlands">Netherlands</option>
           </select>
 
+          <br />
           <br />
 
           <label>
@@ -119,6 +122,7 @@ class App extends Component {
             Lactose Free?
           </label>
           <br />
+          <br />
 
           <button>Submit</button>
         </form>
@@ -131,7 +135,7 @@ class App extends Component {
         <p>Your gender: {this.state.gender}</p>
         <p>Your destination: {this.state.destination}</p>
         <hr />
-        <p>Your dietary restrictions</p>
+        <p>Your dietary restrictions:</p>
 
         <p>Vegan: {this.state.isVegan ? "Yes" : "No"}</p>
         <p>Kosher: {this.state.isKosher ? "Yes" : "No"}</p>
